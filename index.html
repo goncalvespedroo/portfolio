@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Gonçalves · Backend & AI</title>
+  <meta name="description" content="Portfólio de João Pedro Gonçalves: backend, integração com LLMs e automação com IA.">
+  <meta name="theme-color" content="#1c3326">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4C50 10 60 26 54 42 48 58 26 62 14 50 2 38 8 18 32 4Z' fill='%232f6b45'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Pedro Gonçalves, início">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C50 10 60 26 54 42 48 58 26 62 14 50 2 38 8 18 32 4Z"/></svg>
+      Pedro
+    </a>
+    <nav aria-label="Seções">
+      <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
+      <a href="#experiencia" data-i18n="nav.experiencia">Experiência</a>
+      <a href="#contato" data-i18n="nav.contato">Contato</a>
+    </nav>
+    <div class="idioma" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <svg class="hero__fundo" viewBox="0 0 600 600" aria-hidden="true">
+        <path class="blob blob--a" d="M421 92c58 42 104 112 98 186-6 75-63 152-134 196-70 44-155 55-219 18C102 455 59 371 66 291c7-81 64-157 132-200 68-43 165-41 223 1Z"/>
+        <path class="blob blob--b" d="M386 168c42 28 64 86 52 139-12 52-58 99-113 113-55 13-119-8-150-50-31-43-29-107 2-151 31-45 92-69 141-69 25 0 47 7 68 18Z"/>
+      </svg>
+
+      <div class="hero__texto">
+        <figure class="retrato">
+          <img src="assets/pedro.jpg" width="150" height="150" alt="Foto de Pedro Gonçalves" data-i18n-alt="foto.alt">
+        </figure>
+        <h1>Pedro<br>Gonçalves</h1>
+        <p class="hero__titulo" data-i18n="hero.titulo">Backend &amp; AI engineer em formação</p>
+        <p class="hero__lead" data-i18n="hero.lead">Construo APIs, integrações com modelos de linguagem e automações que tiram trabalho repetitivo das pessoas. Estudo Ciência da Computação na UEPB, em Patos (PB).</p>
+        <div class="acoes">
+          <a class="botao botao--cheio" href="#projetos" data-i18n="hero.cta1">Ver projetos</a>
+          <a class="botao" href="#contato" data-i18n="hero.cta2">Falar comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre secao" aria-labelledby="t-sobre">
+      <h2 id="t-sobre" data-i18n="sobre.t">Sobre</h2>
+      <div class="sobre__grade">
+        <div class="sobre__texto">
+          <p data-i18n="sobre.p1">Sou estagiário de suporte técnico e desenvolvimento na Siqueira Tecnologia. Atender usuário de perto me ensinou a olhar para o que quebra, por que quebra e como evitar que quebre de novo, e é isso que levo para o código.</p>
+          <p data-i18n="sobre.p2">Meu foco é backend e integração com LLMs: contratos claros, falhas tratadas com cuidado e testes que não dependem de rede. No TCC, construo o Sokra, um tutor de programação que ensina por perguntas em vez de entregar respostas.</p>
+          <p data-i18n="sobre.p3">Fora do código, lidero a equipe de comunicação de um projeto de extensão da UEPB.</p>
+        </div>
+        <dl class="fatos">
+          <div><dt data-i18n="fatos.curso">Formação</dt><dd data-i18n="fatos.cursoV">Ciência da Computação na UEPB, com conclusão prevista para jun/2028</dd></div>
+          <div><dt data-i18n="fatos.base">Onde estou</dt><dd>Patos, Paraíba</dd></div>
+          <div><dt data-i18n="fatos.idiomas">Idiomas</dt><dd data-i18n="fatos.idiomasV">Português (nativo), inglês (avançado), italiano (fluente)</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="secao" id="projetos" aria-labelledby="t-projetos">
+      <h2 id="t-projetos" data-i18n="proj.t">Projetos</h2>
+
+      <article class="projeto projeto--destaque">
+        <svg class="projeto__forma" viewBox="0 0 400 400" aria-hidden="true"><path d="M318 74c40 36 58 98 44 155-15 57-62 108-120 124-58 15-127-5-163-50S41 189 66 136c25-54 87-93 146-95 41-1 80 9 106 33Z"/></svg>
+        <div class="projeto__cabeca">
+          <h3>Sokra</h3>
+          <p class="status" data-i18n="sokra.status">MVP em desenvolvimento, projeto do TCC</p>
+        </div>
+        <p class="projeto__resumo" data-i18n="sokra.resumo">Tutor de estudos baseado no método socrático. Em vez de entregar a resposta pronta, conduz o estudante por perguntas para que ele desenvolva o próprio raciocínio.</p>
+
+        <div class="projeto__colunas">
+          <div>
+            <h4 data-i18n="rot.problema">O problema</h4>
+            <p data-i18n="sokra.problema">Ferramentas de IA costumam transformar o estudo em algo passivo: o aluno pergunta e recebe a resposta. Isso atrapalha justamente quem está aprendendo a programar.</p>
+          </div>
+          <div>
+            <h4 data-i18n="rot.construi">O que construí até aqui</h4>
+            <ul data-i18n="sokra.construi">
+              <li>Landing page e lista de espera.</li>
+              <li>API em FastAPI com uma camada de provedores de LLM definida por contrato (<code>Protocol</code>): streaming, avaliação e embeddings.</li>
+              <li>Adaptador para o OpenRouter com streaming SSE, avaliação com saída estruturada em JSON Schema e embeddings.</li>
+              <li>Pipeline de CI no GitHub Actions com Ruff, Pyright e Pytest.</li>
+            </ul>
+          </div>
+        </div>
+
+        <details class="decisoes">
+          <summary data-i18n="rot.decisoes">Decisões técnicas</summary>
+          <ul data-i18n="sokra.decisoes">
+            <li>Erros separados em transitórios (408, 429, 5xx recuperáveis, falhas de rede) e permanentes; só os transitórios são repetidos, com backoff limitado e respeito ao <code>Retry-After</code>.</li>
+            <li>Nenhuma nova tentativa depois que o primeiro trecho do stream chega ao usuário, para não duplicar resposta.</li>
+            <li>Mensagens de erro públicas nunca repetem corpo da resposta, prompt ou credenciais do provedor.</li>
+            <li>Testes com <code>MockTransport</code> do HTTPX e uma trava que bloqueia rede e DNS: a suíte roda sem chave, sem internet e sem custo.</li>
+          </ul>
+        </details>
+
+        <ul class="tags" aria-label="Stack">
+          <li>Python 3.14</li><li>FastAPI</li><li>Pydantic Settings</li><li>HTTPX</li><li>OpenRouter</li><li>Pytest</li><li>Ruff</li><li>Pyright</li><li>uv</li><li>GitHub Actions</li>
+        </ul>
+        <div class="links">
+          <a href="https://github.com/goncalvespedroo/sokra-tutor" data-i18n="rot.repo">Ver repositório</a>
+        </div>
+      </article>
+
+      <article class="projeto projeto--claro">
+        <div class="projeto__cabeca">
+          <h3>Vigília</h3>
+          <p class="status" data-i18n="vig.status">Em desenvolvimento, uso pessoal</p>
+        </div>
+        <p class="projeto__resumo" data-i18n="vig.resumo">Gerenciador de tarefas pessoal instalável (PWA), com identidade de “organização secreta”. Reúne faculdade, a equipe que lidero e a vida pessoal num só lugar, com lembretes no computador e no celular.</p>
+
+        <div class="projeto__colunas">
+          <div>
+            <h4 data-i18n="rot.construi2">O que construí</h4>
+            <ul data-i18n="vig.construi">
+              <li>Kanban e checklist, tela Hoje, calendário e reuniões com pauta e ata.</li>
+              <li>Captura rápida com marcações no próprio texto: <code>#área</code>, <code>@amanhã 14h</code>, <code>!!</code> para prioridade, <code>/prova</code>, <code>+pessoa</code>.</li>
+              <li>Equipe com mensagem de cobrança pronta para enviar pelo WhatsApp.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="rot.decisoes">Decisões técnicas</h4>
+            <ul data-i18n="vig.decisoes">
+              <li>Supabase com Row Level Security por usuário em todas as tabelas e sincronização em tempo real entre dispositivos.</li>
+              <li>Edge Function em Deno, disparada pelo <code>pg_cron</code> a cada 5 minutos, envia Web Push com deduplicação dos lembretes.</li>
+              <li>Service worker com Workbox: o app abre offline e guarda uma cópia local dos dados.</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="tags" aria-label="Stack">
+          <li>React 19</li><li>TypeScript</li><li>Vite</li><li>Supabase</li><li>PostgreSQL</li><li>Deno</li><li>Web Push</li><li>Workbox</li><li>Cloudflare Pages</li>
+        </ul>
+        <div class="links">
+          <a href="https://github.com/goncalvespedroo/vigilia" data-i18n="rot.repo">Ver repositório</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="secao" id="experiencia" aria-labelledby="t-exp">
+      <h2 id="t-exp" data-i18n="exp.t">Experiência</h2>
+      <ol class="caule">
+        <li>
+          <p class="quando" data-i18n="exp.siq.q">mai/2026 até hoje</p>
+          <h3>Siqueira Tecnologia</h3>
+          <p class="papel" data-i18n="exp.siq.p">Estagiário de Suporte Técnico &amp; Desenvolvimento</p>
+        </li>
+        <li>
+          <h3>ProEduka</h3>
+          <p class="papel" data-i18n="exp.pro.p">Estágio em desenvolvimento: automações com n8n e integrações entre sistemas</p>
+        </li>
+        <li>
+          <h3>BeWear</h3>
+          <p class="papel" data-i18n="exp.bew.p">QA freelance</p>
+        </li>
+        <li>
+          <h3>Knex Consultoria Jr</h3>
+          <p class="papel" data-i18n="exp.knex.p">PMO, gestão de projetos</p>
+        </li>
+        <li>
+          <h3 data-i18n="exp.ext.t">Projeto de extensão na UEPB</h3>
+          <p class="papel" data-i18n="exp.ext.p">Líder da equipe de comunicação</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="secao" aria-labelledby="t-skills">
+      <h2 id="t-skills" data-i18n="sk.t">Ferramentas</h2>
+      <div class="grupos">
+        <div class="grupo">
+          <h3>Backend</h3>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>Pydantic</li><li>Java</li><li>Spring Boot</li><li>Node.js</li><li>SQL</li></ul>
+        </div>
+        <div class="grupo">
+          <h3 data-i18n="sk.ia">IA e automação</h3>
+          <ul class="tags"><li data-i18n="sk.llm">Integração com LLMs</li><li>OpenRouter</li><li>n8n</li></ul>
+        </div>
+        <div class="grupo">
+          <h3>Frontend</h3>
+          <ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li></ul>
+        </div>
+        <div class="grupo">
+          <h3 data-i18n="sk.qa">Testes e qualidade</h3>
+          <ul class="tags"><li>Pytest</li><li>Cypress</li><li>Postman</li></ul>
+        </div>
+        <div class="grupo">
+          <h3 data-i18n="sk.infra">Infra e dados</h3>
+          <ul class="tags"><li>Docker</li><li>GitHub Actions</li><li>Supabase</li><li>PostgreSQL</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTATO -->
+  <footer class="contato" id="contato">
+    <svg class="contato__onda" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 64C180 10 360 0 560 34s380 84 600 60S1380 30 1440 40V120H0Z"/></svg>
+    <div class="contato__corpo">
+      <h2 data-i18n="ct.t">Vamos conversar</h2>
+      <p data-i18n="ct.p">Estou aberto a estágios e projetos em backend, LLMs e automação.</p>
+      <a class="email" href="mailto:contato.pedrojson@gmail.com">contato.pedrojson@gmail.com</a>
+      <ul class="redes">
+        <li><a href="https://www.linkedin.com/in/goncalves-pedroo">LinkedIn</a></li>
+        <li><a href="https://github.com/goncalvespedroo">GitHub</a></li>
+        <li><a href="curriculo.pdf" data-i18n="ct.cv">Baixar currículo (PDF)</a></li>
+      </ul>
+      <p class="rodape">© 2026 João Pedro Gonçalves Dias da Silva</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
